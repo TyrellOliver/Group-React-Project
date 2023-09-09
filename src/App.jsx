@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Init Commit - rb</h1>
+      <h1>Tyrell was here!</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
