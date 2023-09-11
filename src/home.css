@@ -1,0 +1,10 @@
+body{
+    background-color: skyblue;
+    background-image: url("https://vegnews.com/media/W1siZiIsIjIyMTU4L1ZlZ05ld3MuUGxhbnRlZ2ExLmpwZyJdLFsicCIsImNyb3BfcmVzaXplZCIsIjE1OTl4OTQ1KzArMCIsIjE2MDB4OTQ2XiIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Plantega1.jpg?sha=169261025d6448ed") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0%;
+    }
