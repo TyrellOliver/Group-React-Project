@@ -388,3 +388,5 @@ export const beverages = [
     price: 1.25
   }
 ];
+
+export default sandwichOptions;

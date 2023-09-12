@@ -1,13 +1,13 @@
+import NavBar from "./NavBar";
 
 function Checkout() {
-    return ( 
-        <>
-        
-        </>
-
-    );
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+    </>
+  );
 }
 
-
-
-export default Checkout
+export default Checkout;
