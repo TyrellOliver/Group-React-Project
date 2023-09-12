@@ -106,6 +106,11 @@ export const cheeseSelection = [
     price: 1.25
   },
   {
+    id: "sc-06",
+    name: "Feta",
+    price: 2.5
+  },
+  {
     id: "sc-99",
     name: "No Cheese",
     price: 0
@@ -187,6 +192,11 @@ export const toppingsSelection = [
     id: "st-15",
     name: "Alfafa Sprouts",
     price: 0
+  },
+  {
+    id: "st-16",
+    name: "Mixed Greens",
+    price: 0
   }
 ];
 
@@ -262,8 +272,115 @@ export const dressingSelection = [
     price: 0
   },
   {
+    id: "sd-15",
+    name: "Pesto",
+    price: 0
+  },
+  {
     id: "sd-99",
     name: "No Dressing",
     price: 0
+  }
+];
+
+export const signatureSandwiches = [
+  {
+    id: "ss-01",
+    name: "The Jackal Sandwich",
+    description:
+      "Boar's Head Cap-Off Top Round Pastrami, Feta and Provolone Cheese, Avocado, Pickles, Banana Peppers, Mixed Greens, Pesto and Honey Mustard on Slice Whole Wheat Bread.",
+    price: 12.99
+  },
+  {
+    id: "ss-02",
+    name: "The Daryna Club",
+    description:
+      "Boar's Head Ovengold Roasted Turkey Breast, Thick-Cut Applewood Bacon, Lettuce, Sliced Tomato and Mayo on a Hero.",
+    price: 8.99
+  },
+  {
+    id: "ss-03",
+    name: "Tyrell's Turkey Sandwich",
+    description:
+      "Boar's Head Ovengold Roasted Turkey Breast, Boar's Head Maple Glazed Honey Turkey Breast, Boar's Head Baby Swiss, Sliced Red Onion and Mayo on Sliced Whole Wheat Bread.",
+    price: 11.49
+  },
+  {
+    id: "ss-04",
+    name: "Rico's B-B-Q Honey Ham Sandwich",
+    description:
+      "Boar's Head Maple Glazed Honey Coat Ham, Boar's Head Vermont Yellow Cheddar, Lettuce, Sliced Tomato and Red Onion, Bread & Butter Pickles and BBQ Sauce on a Keysor Roll.",
+    price: 6.79
+  }
+];
+
+export const potatoChips = [
+  {
+    id: "pc-01",
+    name: "Bag of Nacho Cheese Doritos",
+    price: 1.99
+  },
+  {
+    id: "pc-02",
+    name: "Bag of Lay's Classic Potato Chips",
+    price: 1.99
+  },
+  {
+    id: "pc-03",
+    name: "Bog of Sun Chips Harvest Cheddar",
+    price: 1.99
+  },
+  {
+    id: "pc-04",
+    name: "Bag of Cheetos",
+    price: 1.99
+  },
+  {
+    id: "pc-05",
+    name: "Bog of Fritos Corn Chips",
+    price: 1.99
+  },
+  {
+    id: "pc-06",
+    name: "Bag of MIss Vickie's Smokehouse BBQ Chips",
+    price: 1.99
+  }
+];
+
+export const beverages = [
+  {
+    id: "bev-01",
+    name: "Bottled Coca-Cola (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-02",
+    name: "Bottled Diet Coke (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-03",
+    name: "Bottled Sprite (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-04",
+    name: "Bottled Diet Dr Pepper (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-05",
+    name: "Bottled Ginger Ale (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-06",
+    name: "Bottled Orange Fanta (20 oz.)",
+    price: 1.99
+  },
+  {
+    id: "bev-07",
+    name: "Dasani Bottled Water (20 oz.)",
+    price: 1.25
   }
 ];
