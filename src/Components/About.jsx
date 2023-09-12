@@ -1,5 +1,8 @@
 import TeamMemberCard from "./TeamMemberCard";
-import NavBar from "./NavBar";
+import { Link } from 'react-router-dom'
+import NavBar from "./NavBar"
+
+
 
 const About = () => {
   const teamMembers = [
@@ -36,6 +39,7 @@ const About = () => {
     <>
       <header>
         <NavBar />
+
       </header>
       
       <div className="about-page">
