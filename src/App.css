@@ -1,21 +1,14 @@
 body{
 background-color: skyblue;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
 margin: 0;
-padding: 0%;
-}
-header {
-  background-color:gray;
-  color: black;
-  padding: 10px 0;
-  text-align: center;
-  position: relative;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+padding: 0;
 }
 
 header nav {
@@ -37,20 +30,28 @@ header nav ul li {
 }
 
 h1 {
+  background-color: green;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-K6VuSi82iHYUY1lNB3fIeC-ML6mnaNzFVw&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   text-align: center;
-  margin:70px 0;
+  margin:10px 0;
   display:flex;
   justify-content: center;
   align-items: center;
+  color: white;
+ 
+  box-sizing: content-box;
+  width: 80%;
+  border: solid #5B6DCD;
+  padding: 10%;
 }
 
 header a {
+  border: 2px solid white ;
   text-decoration: none;
-  color:white;
+  color:black;
   font-weight: bold;
-}
-
-header a:hover{
-  text-decoration: underline;
 }

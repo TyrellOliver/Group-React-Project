@@ -1,0 +1,36 @@
+div.team-member-card{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0%;
+    border: 20px solid red;
+
+}
+div.social-links{
+    padding: 10px;
+    width: 7%;
+    
+    }
+
+    h3{
+        border: 5cap solid;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+    }
+
+    img.profile-image{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+    }
+    p{ 
+       text-align: center;
+    }
+    .a{
+        background-color: blue ;
+    }

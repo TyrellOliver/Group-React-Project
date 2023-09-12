@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import "./Home.css";
 
 const Home = () => {
   return (
