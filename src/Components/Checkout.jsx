@@ -1,8 +1,11 @@
+import NavBar from "./NavBar"
 
 function Checkout() {
     return ( 
         <>
-        
+              <header>
+        <NavBar />
+      </header>
         </>
 
     );
