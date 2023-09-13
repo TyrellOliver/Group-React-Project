@@ -5,6 +5,7 @@ import Home from "./Components/Home"
 import About from "./Components/About"
 import Menu from "./Components/Menu"
 import Checkout from "./Components/Checkout"
+import Calories from './Components/APi'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -13,8 +14,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
+    
     <Router>
-      <div></div>
+      <div>
+      
+      </div>
+      <Calories />
       <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/menu" element={<Menu />} />
