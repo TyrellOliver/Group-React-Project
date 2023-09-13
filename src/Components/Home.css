@@ -1,17 +1,20 @@
 div.team-member-card{
-    background-color: white;
-    justify-content: center;
+    background-color:whitesmoke;
+    background-size: cover;
+    background-image: url();
     align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 0%;
-    border: 20px solid red;
-
+    border: 20px solid pink;
 }
+
 div.social-links{
-    padding: 10px;
-    width: 7%;
-    
+    /* padding: 10px;
+    width: 7%; */
+    position: relative;
+    left:45%;
+    align-items: center;
     }
 
     h3{
@@ -21,7 +24,9 @@ div.social-links{
         padding: 10px;
         text-align: center;
     }
-
+hr{
+    border:20px;
+}
     img.profile-image{
        display: block;
        margin-left: auto;
