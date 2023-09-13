@@ -21,6 +21,7 @@ function NavBar() {
   <Link to="/menu">Menu</Link>
   <Link to="/checkout">Checkout</Link>
   <Link to="/about">About</Link>
+  <Link to="/cart">Cart</Link>
         <button className='nav-btn nav-close-btn' onClick={showNavBar}>
           <FaTimes />
         </button>
