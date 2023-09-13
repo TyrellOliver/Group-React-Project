@@ -1,0 +1,13 @@
+/* Maybe to get this right I have to make another div and do a grid inside a grid */
+.sandwich{
+    /* display: grid;  */
+    /* grid-template-columns:  */
+    border: 1px solid black;
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+.sandwich-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
