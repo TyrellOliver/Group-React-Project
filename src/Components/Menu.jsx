@@ -1,6 +1,3 @@
-// import signatureSandwiches from "../data/sandwichOptions.js";
-// import potatoChips from "../data/sandwichOptions.js";
-// import beverages from "../data/sandwichOptions.js";
 import dataFromSandwichOptions from "../data/sandwichOptions.js";
 import NavBar from "./NavBar";
 
