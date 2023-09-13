@@ -1,21 +1,32 @@
-import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
+import "..//Styles/NavBar.css";
+import { Link } from "react-router-dom";
 
+function NavBar() {
+  const navRef = useRef();
 
-const NavBar = () => {
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
     <header>
-      <nav className="navBar">
-        <div className="nav-links">
-          <div className="nav-link">
-            <Link to="/"> Home </Link>
-          </div>
-          <div className="nav-link">
-            <Link to="/about"> About </Link>
-          </div>
-        </div>
+      <h3>Your One Stop Sandwich Shop</h3>
+      <nav ref={navRef}>
+        <Link to="/home">Home</Link>
+        <Link to="/menu">Menu</Link>
+        <Link to="/checkout">Checkout</Link>
+        <Link to="/about">About</Link>
+        <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+          <FaTimes />
+        </button>
       </nav>
+      <button className="nav-btn" onClick={showNavBar}>
+        <FaBars />
+      </button>
     </header>
   );
-};
+}
 
 export default NavBar;
