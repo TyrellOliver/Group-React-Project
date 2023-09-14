@@ -1,6 +1,6 @@
 import BYOItem from "./BYOItem.jsx";
 
-function SandwichDetails() {
+function BYODetails() {
   return (
     <>
       <div>
@@ -18,4 +18,4 @@ function SandwichDetails() {
   );
 }
 
-export default SandwichDetails;
+export default BYODetails;

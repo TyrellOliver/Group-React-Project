@@ -1,3 +1,13 @@
+import PropTypes from "prop-types";
+
+TeamMemberCard.propTypes = {
+  name: PropTypes.string,
+  imageUrl: PropTypes.string,
+  linkedInLink: PropTypes.string,
+  githubLink: PropTypes.string,
+  info: PropTypes.string
+};
+
 const TeamMemberCard = ({ name, imageUrl, linkedInLink, githubLink, info }) => {
   return (
     <div className="team-member-card">
