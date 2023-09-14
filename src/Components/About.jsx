@@ -1,8 +1,5 @@
 import TeamMemberCard from "./TeamMemberCard";
-
-
-import NavBar from "./NavBar"
-
+import NavBar from "./NavBar";
 
 const About = () => {
   const teamMembers = [
