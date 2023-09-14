@@ -1,15 +1,23 @@
-// import "./sandwichDetails.css"
 
-// const SandwichDetails = ({ name, description, price, image }) => {
-//     return (
-//         <div className="sandwich">
-//           <img src={image} alt={`image of ${name}`} />
-//           <h2>{name}</h2>
-//           <p>{description}</p>
-//           <p>Price: {price}</p>
-//         </div>
-//       );
-//     };
-    
+import BYOItem from "./BYOItem.jsx";
 
-// export default  SandwichDetails;
+function SandwichDetails() {
+  return (
+    <>
+      <div>
+        <br />
+        <h2>Build Your Own Sandwich</h2>
+        <p>
+          Create your own sandwich by building it from the bread up to the
+          toppings and dressings!
+        </p>
+        <br />
+        <BYOItem />
+        <br />
+      </div>
+    </>
+  );
+}
+
+export default SandwichDetails;
+
