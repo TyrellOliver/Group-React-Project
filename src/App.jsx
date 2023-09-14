@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useState } from "react";
 import NavBar from './Components/NavBar';
@@ -9,25 +10,26 @@ import Calories from './Components/APi'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import "./App.css";
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     
     <Router>
+
       <div>
-      
-      </div>
       <Calories />
+      </div>
+
       <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/menu" element={<Menu />} />
-    <Route path="/checkout" element={<Checkout />} />
-    <Route path="/About" element={<About />} />
-  </Routes>
-</Router>
-);
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
