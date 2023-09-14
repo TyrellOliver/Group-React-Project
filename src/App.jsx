@@ -19,7 +19,7 @@ function App() {
     <Router>
 
       <div>
-      <Calories />
+      {/* <Calories /> */}
       </div>
 
       <Routes>

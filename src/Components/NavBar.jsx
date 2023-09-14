@@ -14,11 +14,11 @@ function NavBar() {
     <header>
       <h3>Your One Stop Sandwich Shop</h3>
       <nav ref={navRef}>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
-        <Link to="/checkout">Checkout</Link>
+        {/* <Link to="/checkout">Checkout</Link> */}
         <Link to="/about">About</Link>
-        <Link to="/cart">Cart</Link>
+        {/* <Link to="/cart">Cart</Link> */}
         <button className='nav-btn nav-close-btn' onClick={showNavBar}>
           <FaTimes />
         </button>
