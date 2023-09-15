@@ -1,72 +1,22 @@
-import listOptions from "../data/sandwichOptions.js";
+import BYOOptions from "./BYOOptions.jsx";
+import "./sandwichDetails.css";
 
-export default function BYOItem() {
-  console.log(BYOItem);
+function BYOItem() {
   return (
     <>
       <div>
-        {listOptions.breadSelection.map(({ name, price }, id) => {
-          return (
-            <div className="options-container" key={id}>
-              <h3>
-                {name} <span> ${price}</span>
-              </h3>
-            </div>
-          );
-        })}
+        <br />
+        <h2>Build Your Own Sandwich</h2>
+        <p>
+          Create your own sandwich by building it from the bread up to the
+          toppings and dressings!
+        </p>
+        <br />
+        <BYOOptions />
+        <br />
       </div>
-      <>
-        <div>
-          {listOptions.meatSelection.map(({ name, price }, id) => {
-            return (
-              <div className="options-container" key={id}>
-                <h3>
-                  {name} <span> ${price}</span>
-                </h3>
-              </div>
-            );
-          })}
-        </div>
-        <>
-          <div>
-            {listOptions.cheeseSelection.map(({ name, price }, id) => {
-              return (
-                <div className="options-container" key={id}>
-                  <h3>
-                    {name} <span> ${price}</span>
-                  </h3>
-                </div>
-              );
-            })}
-          </div>
-          <>
-            <div>
-              {listOptions.toppingsSelection.map(({ name, price }, id) => {
-                return (
-                  <div className="options-container" key={id}>
-                    <h3>
-                      {name} <span> ${price}</span>
-                    </h3>
-                  </div>
-                );
-              })}
-            </div>
-            <>
-              <div>
-                {listOptions.dressingSelection.map(({ name, price }, id) => {
-                  return (
-                    <div className="options-container" key={id}>
-                      <h3>
-                        {name} <span> ${price}</span>
-                      </h3>
-                    </div>
-                  );
-                })}
-              </div>
-            </>
-          </>
-        </>
-      </>
     </>
   );
 }
+
+export default BYOItem;

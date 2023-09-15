@@ -18,19 +18,3 @@ export default function SigSandwichItem() {
     </div>
   );
 }
-//   return (
-//     <>
-//       <
-//         <h2>Signature Sandwiches</h2>
-//         <h3>
-//           {signatureSandwiches.name}: ${signatureSandwiches.price}
-//         </h3>
-//         <p>{signatureSandwiches.description}</p>
-//         <img src={signatureSandwiches.image} alt="" />
-//         <button onClick={() => handleViewDetails(signatureSandwiches)}>
-//           View Item
-//         </button>
-//       </div>
-//     </>
-//   );
-// }
