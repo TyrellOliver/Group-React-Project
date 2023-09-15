@@ -1,5 +1,4 @@
 import TeamMemberCard from "./TeamMemberCard";
-import NavBar from "./NavBar";
 
 const About = () => {
   const teamMembers = [
@@ -34,10 +33,6 @@ const About = () => {
   ];
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
-
       <div className="about-page">
         <h1>Meet the Team</h1>
         <div className="team-members">
