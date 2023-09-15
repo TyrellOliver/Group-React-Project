@@ -18,7 +18,7 @@ function App() {
     <Router>
 
       <div>
-      <Calories />
+  
       </div>
 
       <Routes>
