@@ -5,6 +5,7 @@ const TeamMemberCard = ({ name, imageUrl, linkedInLink, githubLink, info }) => {
     <div className="team-member-card">
       <hr />
       <img
+        id="profile-img"
         src={imageUrl}
         alt={`Profile of ${name}`}
         className="profile-image"
