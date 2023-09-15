@@ -1,0 +1,29 @@
+.upper-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#menu {
+  color: #f10404;
+  background-color: #f2f604;
+  font-size: 20px;
+  border: 3px solid #f20707;
+  border-radius: 23px;
+  padding: 8px 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-width: 5px;
+}
+#menu:hover {
+  color: #02f7f3;
+  background-color: #514d4d;
+}
+
+h1 {
+  font-family: fantasy;
+}
+
+button#menu {
+  margin-left: auto;
+  margin-right: auto;
+}

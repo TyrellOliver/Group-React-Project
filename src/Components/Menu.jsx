@@ -1,46 +1,35 @@
-import dataFromSandwichOptions from "../data/sandwichOptions.js";
-import NavBar from "./NavBar";
+import SigSandwichItem from "./SigSandwichItem.jsx";
+import ChipsItem from "./ChipsItem.jsx";
+import BeverageItem from "./BeverageItem.jsx";
 
 function Menu() {
-  console.log("dataFromSandwichOptions", dataFromSandwichOptions);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
-      <>
-        <div className="category-container">
-          <h2>Signature Sandwiches</h2>
-          <h3>
-            {dataFromSandwichOptions.signatureSandwiches.name}: $
-            {dataFromSandwichOptions.signatureSandwiches.price}
-          </h3>
-          <p>{dataFromSandwichOptions.signatureSandwiches.descrition}</p>
-          <img src={dataFromSandwichOptions.signatureSandwiches.image} alt="" />
-        </div>
-        <>
-          <div className="category-container">
-            <h2>Potato Chip</h2>
-            <h3>
-              {dataFromSandwichOptions.potatoChips.name}: $
-              {dataFromSandwichOptions.potatoChips.price}
-            </h3>
-          </div>
-        </>
-        <>
-          <div className="category-container">
-            <h2>Beverages</h2>
-            <h3>
-              {dataFromSandwichOptions.beverages.name}: $
-              {dataFromSandwichOptions.beverages.price}
-            </h3>
-          </div>
-        </>
-      </>
+      <div className="category-container">
+        <br />
+        <h2>
+          <a href="/byo-item">
+            <button type="submit">Build Your Own Sandwich</button>
+          </a>
+        </h2>
+        <p>
+          Create your own sandwich by building it from the bread up to the
+          toppings and dressings!
+        </p>
+        <br />
+        <h2>Signature Sandwiches</h2>
+        <SigSandwichItem />
+        <br />
+        <h2>Chips</h2>
+        <ChipsItem />
+        <br />
+        <h2>Beverages</h2>
+        <BeverageItem />
+        <br />
+      </div>
+      <cart />
     </>
   );
 }
 
 export default Menu;
-
-// (breadSelection, meatSelection, cheeseSelection, toppingsSelection, dressingSelection, signatureSandwiches, potatoChips,  beverages)
