@@ -3,7 +3,7 @@ import React, {useState} from "react"
 
 const Cart = ({cartItems, removeFromCart}) => {
     const [totalPrice, setTotalPrice] = useState(0);
-}
+
 
 const calculateTolalPrice = () => {
     let total = 0;
@@ -32,6 +32,6 @@ const calculateTolalPrice = () => {
         </div>
     </div>
  );
-
+}
 export default Cart;
 

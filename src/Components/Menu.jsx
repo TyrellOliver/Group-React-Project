@@ -1,6 +1,7 @@
 import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
+import Cart from "./Cart.jsx"
 
 function Menu() {
   return (
@@ -27,7 +28,9 @@ function Menu() {
         <BeverageItem />
         <br />
       </div>
-      <cart />
+      <div>
+        <Cart/>
+      </div>
     </>
   );
 }

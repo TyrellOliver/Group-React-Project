@@ -27,3 +27,22 @@ button#menu {
   margin-left: auto;
   margin-right: auto;
 }
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  #logo {
+    display: flex;
+    max-height: 100%; 
+    max-width: 100%; 
+    margin: auto;
+  }
+
+  #menu {
+    display: flex;
+    margin: auto;
+  }

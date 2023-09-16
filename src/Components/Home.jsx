@@ -8,7 +8,7 @@ const Home = () => {
         <div className="upper-container">
           <h1>One-Stop Sandwich Shop</h1>
         </div>
-        <img id="logo" src={logo} alt="store logo" height={200} />
+        <img id="logo" src={logo} alt="store logo" height={250}/>
         <br />
         <br />
         <div className="lower-container">
