@@ -1,6 +1,8 @@
 .upper-container {
   display: grid;
   grid-template-columns: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #menu {
@@ -20,7 +22,7 @@
 }
 
 h1 {
-  font-family: fantasy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button#menu {

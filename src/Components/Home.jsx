@@ -1,19 +1,19 @@
 import "..//Styles/home.css";
 
 const Home = () => {
-  const logo = "/sandwich-shop.png";
+  const logo = "./sandwich-shop.png";
   return (
     <>
       <div className="home-container">
         <div className="upper-container">
           <h1>One-Stop Sandwich Shop</h1>
         </div>
-        <img id="logo" src={logo} alt="store logo" height={200} />
+        <img id="logo" src={logo} alt="store-logo" height={200} />
         <br />
         <br />
         <div className="lower-container">
           <h2>Address:</h2>
-          <h3>647 4th Avew, </h3>
+          <h3>647 4th Ave, </h3>
           <h3>Brooklyn, NY 11232</h3>
           <br />
           <h2>Phone:</h2>
