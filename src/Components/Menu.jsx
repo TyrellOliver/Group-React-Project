@@ -2,6 +2,7 @@ import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
 import "./Menu.css";
+import Cart from "./Cart.jsx"
 
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
@@ -42,7 +43,9 @@ function Menu() {
         <BeverageItem />
         <br />
       </div>
-      <cart />
+      <div>
+        <Cart/>
+      </div>
     </>
   );
 }
