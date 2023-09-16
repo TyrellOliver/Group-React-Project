@@ -12,6 +12,7 @@ export default function SigSandwichItem() {
             </h3>
             <p>{description}</p>
             <img src={image} alt={name} />
+            <br />
           </div>
         );
       })}

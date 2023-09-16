@@ -20,7 +20,12 @@
 }
 
 h1 {
-  font-family: cursive;
+  font-family: fantasy;
+}
+
+button#menu {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
