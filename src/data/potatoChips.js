@@ -2,7 +2,7 @@ const potatoChips = [
   {
     id: "pc-01",
     name: "Bag of Nacho Cheese Doritos",
-    price: 1.99
+    price: 1.99,
   },
   {
     id: "pc-02",

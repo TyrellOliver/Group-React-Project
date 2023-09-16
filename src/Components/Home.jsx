@@ -10,7 +10,7 @@ const Home = () => {
           <h1>One-Stop Sandwich Shop</h1>
           <br />
         </div>
-        <img id="logo" src={logo} alt="store logo" height={200} />
+        <img id="logo" src={logo} alt="store logo" height={250}/>
         <br />
         <br />
         <div className="lower-container">
