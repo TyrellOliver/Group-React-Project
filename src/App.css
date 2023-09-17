@@ -63,10 +63,10 @@ body {
   }
 
   div.about-page{
-    background-image: url(https://thumbs.dreamstime.com/z/bodega-cat-new-york-city-common-corner-stores-where-earn-their-keep-hunting-rats-mice-81868715.jpg);
+    /* background-image: url(https://thumbs.dreamstime.com/z/bodega-cat-new-york-city-common-corner-stores-where-earn-their-keep-hunting-rats-mice-81868715.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   background-position: center
+    background-repeat: no-repeat; */ 
   }
   div.category-container{
     display: flex;  
@@ -78,6 +78,7 @@ body {
 
 p{
   color: black;
+  text-align: center;
 }
 
 header a {
@@ -102,11 +103,17 @@ div.team-member-card {
   align-items: center;
   text-align: center;
 }
-
-.profile-image {
-  image-resolution: 300 x 300;
+#food-image{
+  width: 300px;
+  margin-right: auto;
 }
 
 #profile-img {
   image-resolution: 300 x 300;
+  width: 300px;
+}
+
+.button{
+  display: flex;
+  justify-content:center;
 }
