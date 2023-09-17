@@ -1,4 +1,5 @@
 import signatureSandwiches from "../data/signatureSandwiches.js";
+import "../App.css"
 
 export default function SigSandwichItem() {
   console.log(SigSandwichItem);
@@ -11,7 +12,7 @@ export default function SigSandwichItem() {
               {name} <span> ${price}</span>
             </h3>
             <p>{description}</p>
-            <img src={image} alt={name} />
+            <img src={image} id="food-image" alt={name} />
             <br />
           </div>
         );
