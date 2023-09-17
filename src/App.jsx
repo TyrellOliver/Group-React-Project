@@ -1,28 +1,22 @@
 
-import React from 'react';
-import { useState } from "react";
-import NavBar from './Components/NavBar';
-import Home from "./Components/Home"
-import About from "./Components/About"
-import Menu from "./Components/Menu"
-import Checkout from "./Components/Checkout"
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import NavBar from "./Components/NavBar.jsx";
+import Home from "./Components/Home.jsx";
+import About from "./Components/About.jsx";
+import Menu from "./Components/Menu.jsx";
+import Checkout from "./Components/Checkout.jsx";
+import BYOItem from "./Components/BYOItem.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, {useState} from "react";
 import "./App.css";
-
 
 function App() {
   return (
-    
     <Router>
-
-      <div>
-    </div>
-
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/byo-item" element={<BYOItem />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/about" element={<About />} />
       </Routes>
@@ -31,4 +25,3 @@ function App() {
 }
 
 export default App;
-////
