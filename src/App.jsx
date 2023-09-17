@@ -8,11 +8,14 @@ import BYOItem from "./Components/BYOItem.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, {useState} from "react";
 import "./App.css";
+import FoodData from './Components/APi.jsx';
+
 
 function App() {
   return (
     <Router>
       <NavBar />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -20,6 +23,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <FoodData />
     </Router>
   );
 }
