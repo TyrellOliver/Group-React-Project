@@ -5,7 +5,7 @@ import BeverageItem from "./BeverageItem.jsx";
 function Menu() {
   return (
     <>
-      <div className="category-container">
+      <div className="menu-container">
         <br />
         <h2>Signature Sandwiches</h2>
         <SigSandwichItem />

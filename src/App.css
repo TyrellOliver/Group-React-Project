@@ -8,10 +8,7 @@ body {
   padding: 0%;
   }
 
-  img#logo{
-    display:grid;
-    place-items: center;
-  }
+  
 
   header {
     background-color:gray;
