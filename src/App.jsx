@@ -18,8 +18,7 @@ function App() {
     <Router>
 
       <div>
-  
-      </div>
+    </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
