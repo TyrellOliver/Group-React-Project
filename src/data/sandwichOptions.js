@@ -17,12 +17,12 @@ export const breadSelection = [
   {
     id: "sb-04",
     name: "Hero",
-    price: 2.0
+    price: 200
   },
   {
     id: "sb-05",
     name: "Plain Bagel",
-    price: 1.5
+    price: 150
   }
 ];
 
@@ -30,52 +30,52 @@ export const meatSelection = [
   {
     id: "sm-01",
     name: "Boar's Head Ovengold Roasted Turkey Breast",
-    price: 4.99
+    price: 499
   },
   {
     id: "sm-02",
     name: "Boar's Head Maple Glazed Honey Turkey Breast",
-    price: 4.99
+    price: 499
   },
   {
     id: "sm-03",
     name: "Boar's Head Maple Glazed Honey Coat Ham",
-    price: 4.5
+    price: 450
   },
   {
     id: "sm-04",
     name: "Boar's Head Smoke Master Smoked Black Forest Ham",
-    price: 4.5
+    price: 450
   },
   {
     id: "sm-05",
     name: "Boar's Head EverRoast Chicken Breast",
-    price: 4.75
+    price: 475
   },
   {
     id: "sm-06",
     name: "Private Selection Angus Roast Beef",
-    price: 4.75
+    price: 475
   },
   {
     id: "sm-07",
     name: "Boar's Head Hard Salami",
-    price: 4.75
+    price: 475
   },
   {
     id: "sm-08",
     name: "Boar's Head Cap-Off Top Round Pastrami",
-    price: 4.99
+    price: 499
   },
   {
     id: "sm-09",
     name: "Thick-Cut Applewood Bacon",
-    price: 3.99
+    price: 399
   },
   {
     id: "sm-10",
     name: "Private Selection Pepperoni",
-    price: 3.99
+    price: 399
   }
 ];
 
@@ -83,32 +83,32 @@ export const cheeseSelection = [
   {
     id: "sc-01",
     name: "Boar's Head Vermont Yellow Cheddar",
-    price: 1.99
+    price: 199
   },
   {
     id: "sc-02",
     name: "Boar's Head Yellow Whole Milk American",
-    price: 1.25
+    price: 125
   },
   {
     id: "sc-03",
     name: "Boar's Head Baby Swiss",
-    price: 1.5
+    price: 150
   },
   {
     id: "sc-04",
     name: "Private Selection Pepper Jack",
-    price: 1.5
+    price: 150
   },
   {
     id: "sc-05",
     name: "Private Selection Provolone",
-    price: 1.25
+    price: 125
   },
   {
     id: "sc-06",
     name: "Feta",
-    price: 2.5
+    price: 250
   },
   {
     id: "sc-99",
@@ -121,7 +121,7 @@ export const toppingsSelection = [
   {
     id: "st-01",
     name: "Sliced Tomato",
-    price: 0.25
+    price: 25
   },
   {
     id: "st-02",
@@ -171,7 +171,7 @@ export const toppingsSelection = [
   {
     id: "st-11",
     name: "Fire Roasted Peppers",
-    price: 0.99
+    price: 99
   },
   {
     id: "st-12",
@@ -181,7 +181,7 @@ export const toppingsSelection = [
   {
     id: "st-13",
     name: "Avocado",
-    price: 1.5
+    price: 150
   },
   {
     id: "st-14",
