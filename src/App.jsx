@@ -15,7 +15,6 @@ function App() {
   return (
     <Router>
       <NavBar />
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -23,7 +22,6 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <FoodData />
     </Router>
   );
 }

@@ -1,8 +1,5 @@
-
 import axios from 'axios';
-import {useState, useEffect} from "react";
-
-
+import { useState, useEffect } from 'react';
 
 const API_URL = 'https://edamam-food-and-grocery-database.p.rapidapi.com/api/food-database/v2/parser';
 
@@ -14,47 +11,46 @@ const options = {
   params: {
     'nutrition-type': 'cooking',
     'category[0]': 'generic-foods',
-    'health[0]': 'alcohol-free'
+    'health[0]': 'alcohol-free',
   },
   headers: {
     'X-RapidAPI-Key': API_KEY,
-    'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
-  }
+    'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com',
+  },
 };
 
 function FoodData() {
-  const [apiData, setApiData] = useState([]);
+  const [randomItem, setRandomItem] = useState(null);
 
   useEffect(() => {
     axios
       .request(options)
       .then((response) => {
-        setApiData(response.data); // Store API response data in state
+        const apiData = response.data;
+        if (apiData.hints && apiData.hints.length > 0) {
+          const randomIndex = Math.floor(Math.random() * apiData.hints.length);
+          const randomHint = apiData.hints[randomIndex];
+          setRandomItem(randomHint.food);
+        }
       })
       .catch((error) => {
         console.error(error);
       });
-  }, []); // Empty dependency array means this effect runs once on component mount
+  }, []);
 
   return (
     <div>
-      <h1>API Data</h1>
-      <ul>
-        {apiData && apiData.hints ? (
-          apiData.hints.map((hint, index) => (
-            <li key={index}>
-              <strong>Name:</strong> {hint.food.label} <br />
-              <strong>Category:</strong> {hint.food.category} <br />
-        
-            </li>
-          ))
-        ) : (
-          <li>No data available</li>
-        )}
-      </ul>
+      <h1>Calories information</h1>
+      {randomItem ? (
+        <div>
+          <strong>Name:</strong> {randomItem.label} <br />
+          <strong>Calories:</strong> {randomItem.nutrients.ENERC_KCAL || 'N/A'} kcal <br />
+        </div>
+      ) : (
+        <p>No data available</p>
+      )}
     </div>
   );
-  
 }
 
 export default FoodData;

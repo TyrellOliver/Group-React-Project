@@ -1,10 +1,12 @@
 import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
+import FoodData from './APi.jsx'
 
 function Menu() {
   return (
     <>
+
       <div className="category-container">
         <br />
         <h2>Signature Sandwiches</h2>
@@ -22,6 +24,7 @@ function Menu() {
         <h2>Beverages</h2>
         <BeverageItem />
       </div>
+      <FoodData />
     </>
   );
 }
