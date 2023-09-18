@@ -21,11 +21,13 @@ function Menu() {
         <br />
         <br />
         <br />
-        <h2>Build Your Own Sandwich</h2>
-        <p>
-          Create your own sandwich by building it from the bread up to the
-          toppings and dressings!
-        </p>
+        <h2>
+          <a href="/byo-item" target="_blank">
+            <button id="byo-button" type="submit">
+              Build Your Own Sandwich
+            </button>
+          </a>
+        </h2>
         <br />
         <div className="lower-menu-container">
           <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
