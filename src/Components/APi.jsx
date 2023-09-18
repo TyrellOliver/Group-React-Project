@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
@@ -19,10 +20,24 @@ const options = {
   },
 };
 
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+const API = axios.create({
+  baseURL: "https://api.edamam.com",
+  headers: {
+    "Content-Type": "application/json",
+    "X-Application-ID": "164f191f",
+    "X-API-Key": "7c746e2e8dc7000541345dd32c7a8b13"
+  }
+});
+
+
 function FoodData() {
   const [randomItem, setRandomItem] = useState(null);
 
   useEffect(() => {
+
     axios
       .request(options)
       .then((response) => {
@@ -35,6 +50,7 @@ function FoodData() {
       })
       .catch((error) => {
         console.error(error);
+
       });
   }, []);
 
