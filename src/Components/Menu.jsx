@@ -4,6 +4,9 @@ import BeverageItem from "./BeverageItem.jsx";
 import Cart from "./Cart.jsx";
 
 function Menu() {
+  const drinksImage = "/beverage-bottles.png";
+  const chipsBag = "/Potato-Chips-Menu.png";
+
   const sigSandwichStyles = {
     textDecoration: 'underline',
     marginLeft: '20px'
@@ -37,3 +40,7 @@ function Menu() {
 }
 
 export default Menu;
+
+{
+  /* <button onClick={() => handleRedirect(index)} type="submit">Build Your Own Sandwich</button></a> */
+}

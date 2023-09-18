@@ -9,7 +9,8 @@ export default function ChipsItem() {
         return (
           <div className="chips-container" key={id}>
             <h3>
-              {name} <span> ${price}</span>
+              {name} <span> - ${price} </span>{" "}
+              <button className="css-button-gradient--5">Add to Cart</button>
             </h3>
           </div>
         );
