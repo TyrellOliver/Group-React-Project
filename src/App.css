@@ -7,24 +7,11 @@ body {
   margin: 0;
   padding: 0%;
 }
-  @media (max-width: 768px) {
-    .float-right-sm{
-      float:right;
-    }
-  }
+
   
-  @media (min-width: 769px) {
-    .float-right-lg{
-      float:right;
-    }
-  
-  }
 
 
-  img#logo{
-    display:grid;
-    place-items: center;
-  }
+  
 
   header {
     background-color:gray;
@@ -65,11 +52,6 @@ body {
     align-items: center;
   }
 
-  h2{
-    text-align: center;
-    
-  }
-
   h3{
     color:black;
     text-align: center;
@@ -85,7 +67,7 @@ body {
 }
 
 p{
-=======
+
 
 img#logo {
   display: grid;
@@ -172,28 +154,6 @@ header a:hover {
 
 header a:hover {
   text-decoration: underline;
-}
-
-div.team-member-card {
-  border: 2px solid black;
-  background-color: pink;
-  display: flex;
-  width:600px;
-  padding: 100px;
-  margin: 100px;
-  border: 2px solid black;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-#food-image {
-  height: 138px;
-  margin-right: auto;
-}
-
-#profile-img {
-  image-resolution: 300 x 300;
-  width: 300px;
 }
 
 .button {

@@ -1,5 +1,5 @@
 import BYOOptions from "./BYOOptions.jsx";
-import "./sandwichDetails.css";
+// import "./sandwichDetails.css";
 
 function BYOItem() {
   return (
