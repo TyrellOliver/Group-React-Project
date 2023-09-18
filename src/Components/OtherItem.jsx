@@ -1,7 +1,7 @@
 import BYOOptions from "./BYOOptions.jsx";
 import "./sandwichDetails.css";
 
-function BYOItem() {
+function OtherItem() {
   return (
     <>
       <div>
@@ -19,4 +19,4 @@ function BYOItem() {
   );
 }
 
-export default BYOItem;
+export default OtherItem;

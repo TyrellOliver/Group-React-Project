@@ -14,8 +14,10 @@ function Menu() {
       </div>
       <div className="category-container">
         <h2>
-          <a href="/byo-item">
-            <button type="submit">Build Your Own Sandwich</button>
+          <a href="/byo-item" target="_blank">
+            <button id="byo-button" type="submit">
+              Build Your Own Sandwich
+            </button>
           </a>
         </h2>
         <p>
@@ -44,3 +46,7 @@ function Menu() {
 }
 
 export default Menu;
+
+{
+  /* <button onClick={() => handleRedirect(index)} type="submit">Build Your Own Sandwich</button></a> */
+}
