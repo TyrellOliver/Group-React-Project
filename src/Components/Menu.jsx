@@ -1,7 +1,9 @@
 import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
+import FoodData from './APi.jsx'
 import Cart from "./Cart.jsx";
+
 
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
@@ -13,7 +15,10 @@ function Menu() {
   };
   return (
     <>
+
+
       <div className="menu-container">
+
         <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
         <SigSandwichItem />
@@ -44,6 +49,7 @@ function Menu() {
           <BeverageItem />
         </div>
       </div>
+      <FoodData />
     </>
   );
 }
