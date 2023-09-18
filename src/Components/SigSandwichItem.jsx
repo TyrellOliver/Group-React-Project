@@ -1,20 +1,24 @@
 import signatureSandwiches from "../data/signatureSandwiches.js";
-import "../App.css";
-import "./sandwichDetails.css";
+import "../Styles/Menu.css";
 
 export default function SigSandwichItem() {
   console.log(SigSandwichItem);
   return (
-    <div>
+    <div className="all-sandwiches">
       {signatureSandwiches.map(({ name, price, description, image }, id) => {
+        // const divStyle = {
+        //   backgroundImage: `url(${image})`,
+        //   backgroundSize: "auto",
+        //   backgroundRepeat: "no-repeat",
+        // };
         return (
-          <div className="category-container" key={id}>
+          <div className="sandwich-container" key={id}>
+            <img src={image} id="food-image" alt={name} />
             <h3>
               {name} <span> - ${price}</span>{" "}
               <button className="css-button-gradient--5">Add to Cart</button>
             </h3>
             <p>{description}</p>
-            <img src={image} id="food-image" alt={name} />
             <br />
           </div>
         );

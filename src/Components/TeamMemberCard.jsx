@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../Styles/About.css";
 
 const TeamMemberCard = ({ name, imageUrl, linkedInLink, githubLink, info }) => {
   return (
