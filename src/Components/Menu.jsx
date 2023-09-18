@@ -8,9 +8,9 @@ function Menu() {
   const chipsBag = "/Potato-Chips-Menu.png";
 
   const sigSandwichStyles = {
-    textDecoration: 'underline',
-    marginLeft: '20px'
-  }
+    textDecoration: "underline",
+    marginLeft: "20px",
+  };
   return (
     <>
       <div className="menu-container">
@@ -21,16 +21,23 @@ function Menu() {
         <br />
         <br />
         <br />
-          <h2>Build Your Own Sandwich</h2>
-          <p>
-            Create your own sandwich by building it from the bread up to the
-            toppings and dressings!
-          </p>
-          <br />
+        <h2>Build Your Own Sandwich</h2>
+        <p>
+          Create your own sandwich by building it from the bread up to the
+          toppings and dressings!
+        </p>
+        <br />
         <div className="lower-menu-container">
+          <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
           <h2>Chips</h2>
           <ChipsItem />
           <br />
+          <img
+            id="beverages"
+            src={drinksImage}
+            alt="bottled-beverages"
+            height={138}
+          />
           <h2>Beverages</h2>
           <BeverageItem />
         </div>
