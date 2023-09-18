@@ -1,4 +1,5 @@
 import beverages from "../data/beverages.js";
+import "../Styles/Menu.css";
 
 export default function BeverageItem() {
   console.log(beverages);

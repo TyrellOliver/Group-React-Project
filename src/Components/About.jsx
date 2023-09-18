@@ -1,4 +1,5 @@
 import TeamMemberCard from "./TeamMemberCard";
+import "../Styles/About.css";
 
 const About = () => {
   const teamMembers = [

@@ -1,4 +1,5 @@
 import potatoChips from "../data/potatoChips.js";
+import "../Styles/Menu.css";
 
 export default function ChipsItem() {
   console.log(potatoChips);
