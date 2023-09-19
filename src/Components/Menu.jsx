@@ -1,7 +1,7 @@
 import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
-import Cart from "./Cart.jsx";
+// import Cart from "./Cart.jsx";
 
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
@@ -9,7 +9,7 @@ function Menu() {
 
   const sigSandwichStyles = {
     textDecoration: "underline",
-    marginLeft: "20px",
+    marginLeft: "20px"
   };
   return (
     <>

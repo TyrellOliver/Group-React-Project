@@ -1,4 +1,5 @@
 import "..//Styles/home.css";
+// import Calories from "./API.jsx";
 
 const Home = () => {
   const logo = "/sandwich-shop.png";
@@ -8,7 +9,7 @@ const Home = () => {
         <div className="upper-container">
           <h1>One-Stop Sandwich Shop</h1>
         </div>
-        <img id="logo" src={logo} alt="store logo" height={250}/>
+        <img id="logo" src={logo} alt="store logo" height={250} />
         <br />
         <br />
         <div className="lower-container">
@@ -29,6 +30,7 @@ const Home = () => {
             <br />
             <br />
           </a>
+          {/* <Calories /> */}
         </div>
       </div>
     </>
