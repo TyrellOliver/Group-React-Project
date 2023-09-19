@@ -14,6 +14,9 @@ function BYOItem() {
         <br />
         <BYOOptions />
         <br />
+        <button className="css-button-gradient--5">Add to Cart</button>
+        <br />
+        <br />
       </div>
     </>
   );

@@ -273,6 +273,11 @@ export const dressingSelection = [
   },
   {
     id: "sd-15",
+    name: "Ground Pepper",
+    price: 0
+  },
+  {
+    id: "sd-16",
     name: "Pesto",
     price: 0
   },
