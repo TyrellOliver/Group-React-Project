@@ -13,6 +13,13 @@ function Menu() {
     textDecoration: "underline",
     marginLeft: "20px",
   };
+
+  const byoButtonStyles = {
+    textDecoration: "underline",
+    textAlign: "center",
+    color: "#000080",
+    backgroundColor: "transparent",
+  };
   return (
     <>
 
@@ -20,33 +27,42 @@ function Menu() {
       <div className="menu-container">
 
         <br />
+        <div id="menu-title">
+          <br />
+          <h1>Our Menu:</h1>
+        </div>
+        <h2 className="h2-button">
+          <a href="/byo-item" target="_blank">
+            <button id="byo-button" type="submit" style={byoButtonStyles}>
+              Build Your Own Sandwich
+            </button>
+          </a>
+        </h2>
+        <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
         <SigSandwichItem />
         <br />
         <br />
         <br />
         <br />
-        <h2>
-          <a href="/byo-item" target="_blank">
-            <button id="byo-button" type="submit">
-              Build Your Own Sandwich
-            </button>
-          </a>
-        </h2>
         <br />
         <div className="lower-menu-container">
-          <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
-          <h2>Chips</h2>
-          <ChipsItem />
+          <div className="chips-div">
+            <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
+            <h2 style={{textDecoration: "underline"}}>Chips</h2>
+            <ChipsItem />
+          </div>
           <br />
-          <img
-            id="beverages"
-            src={drinksImage}
-            alt="bottled-beverages"
-            height={138}
-          />
-          <h2>Beverages</h2>
-          <BeverageItem />
+          <div className="beverages-div">
+            <img
+              id="beverages"
+              src={drinksImage}
+              alt="bottled-beverages"
+              height={138}
+            />
+            <h2 style={{textDecoration: "underline"}}>Beverages</h2>
+            <BeverageItem />
+          </div>
         </div>
       </div>
       <FoodData />
