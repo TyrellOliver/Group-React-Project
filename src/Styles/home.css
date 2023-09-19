@@ -50,3 +50,8 @@ button#menu {
 .lower-container{
   text-align: center;
 }
+
+#byo-button {
+  align-items: center;
+  text-align:center;
+}

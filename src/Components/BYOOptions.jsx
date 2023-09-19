@@ -1,8 +1,37 @@
 // const [checked, setChecked] = useState([]);
 import listOptions from "../data/sandwichOptions.js";
+import React, { createFactory, useState } from "react";
 
 export default function BYOOptions() {
   console.log(BYOOptions);
+
+  const [selectedOptions, setSelectedOptions] = useState({
+    bread: null,
+    meat: [],
+    cheese: [],
+    toppings: [],
+    dressing: [],
+  });
+
+  const handleCheckboxChange = (category, name) => {
+    setSelectedOptions((prevSelectedOptions) => {
+      if (category === "bread") {
+        newSelectedOptions.bread = name;
+      } else {
+        const categoryOptions = prevSelectedOptions[category];
+
+        if (categoryOptions.includes(name)) {
+          newSelectedOptions[category] = categoryOptions.filter(
+            (item) => item !== name
+          );
+        } else {
+          newSelectedOptions[category] = [...categoryOptions.filter];
+        }
+      }
+      return newSelectedOptions;
+    });
+  };
+
   return (
     <>
       <div>
@@ -11,8 +40,17 @@ export default function BYOOptions() {
           return (
             <div className="options-container" key={id}>
               <h4>
-                {/* <inut value={name} type="checkbox" /> */}
-                {name} <span> ${price}</span>
+                <label>
+                  <input
+                    type="radio"
+                    name="bread"
+                    value={name}
+                    checked={selectedOptions.bread === name}
+                    onChange={() => handleCheckboxChange("bread", name)}
+                  />
+                  {/* <inut value={name} type="checkbox" /> */}
+                  {name} <span> ${price}</span>
+                </label>
               </h4>
             </div>
           );
@@ -24,9 +62,16 @@ export default function BYOOptions() {
           {listOptions.meatSelection.map(({ name, price }, id) => {
             return (
               <div className="options-container" key={id}>
-                <h4>
-                  {name} <span> ${price}</span>
-                </h4>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={selectedOptions.meat.includes(name)}
+                    onChange={() => handleCheckboxChange("meat", name)}
+                  />{" "}
+                  <h4>
+                    {name} <span> ${price}</span>
+                  </h4>
+                </label>
               </div>
             );
           })}
@@ -38,7 +83,16 @@ export default function BYOOptions() {
               return (
                 <div className="options-container" key={id}>
                   <h4>
-                    {name} <span> ${price}</span>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={selectedOptions.cheese.includes(name)}
+                        onChange={() =>
+                          handleCheckboxChange.cheese.includes(name)
+                        }
+                      />
+                      {name} <span> ${price}</span>
+                    </label>
                   </h4>
                 </div>
               );
@@ -51,7 +105,16 @@ export default function BYOOptions() {
                 return (
                   <div className="options-container" key={id}>
                     <h4>
-                      {name} <span> ${price}</span>
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked={selectedOptions.dressing.includes(name)}
+                          onChange={() =>
+                            handleCheckboxChange("dressing", name)
+                          }
+                        />
+                        {name} <span> ${price}</span>
+                      </label>
                     </h4>
                   </div>
                 );
@@ -63,9 +126,18 @@ export default function BYOOptions() {
                 {listOptions.dressingSelection.map(({ name, price }, id) => {
                   return (
                     <div className="options-container" key={id}>
-                      <h4>
-                        {name} <span> ${price}</span>
-                      </h4>
+                      <label>
+                        <h4>
+                          <input
+                            type="checkbox"
+                            checked={selectedOptions.dressing.includes(name)}
+                            onChange={() =>
+                              handleCheckboxChange("dressing", name)
+                            }
+                          />
+                          {name} <span> ${price}</span>
+                        </h4>
+                      </label>
                     </div>
                   );
                 })}
