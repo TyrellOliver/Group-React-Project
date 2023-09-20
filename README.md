@@ -1,21 +1,25 @@
 # Your One Stop Sandiwch Shop
 
-Your One Stop Sandiwch Shop is a user-friendly React-based web application that revolutionizes the way you enjoy sandwiches. Our app is designed for a custom sandwich shop where customers can create their perfect sandwiches with just a few clicks. Here are some key features:
+One-Stop Sandiwch Shop is a user-friendly React-based web application that provides an online ordering experience for their users to create their own sandwich by building it from the bottom to the top. We offer a comprehensive selection of sandwich ingredients and give the customer full control to have it their way. We also offer a selection of signature sandwiches which have been hand-selected by each of our chefs for those who want to try something different or those who can't make a decision. 
 
-1. Custom Sandwich Builder: Users can choose from a wide range of bread, meats, cheeses, vegetables, sauces, and condiments to create their unique sandwich combination.
+1. Custom Sandwich Builder: Users can choose from a wide range of bread, meats, cheeses, vegetables, sauces, and condiments to create their own unique sandwich combination.
 
-2. Interactive Menu: The app displays an interactive menu with mouthwatering images and detailed descriptions of each ingredient to help customers make informed choices.
+2. Additional Items Available: We also offer a selection of snacks|chips and bottled beverages to satisfy everyone's hunger and thirst.
 
-3. Nutritional Information: For health-conscious customers, we provide nutritional information for each ingredient and calculate the total nutritional value of their custom sandwich.
+3. Ordering and Checkout: After customers finish creating their sandwiches and adding snacks or beverages to their cart, they will have the opportunity to view their order during checkout before submitting it online for pickup.
 
-4. Ordering and Checkout: Once customers have designed their sandwich, they can add it to their cart and proceed to a seamless checkout process for delivery or pickup.
+4. Pick-up Time and Special Requests: Orders will be ready for pick-up 30 minutes after they are submitted. There is a customer note section available to notify us of any changes or special requests, including if a later pick-up time is needed.
 
-5. Responsive Design: The app is optimized for both desktop and mobile devices, ensuring a smooth experience no matter how customers access it.
+5. Weather: The current local weather conditions are available on our homepage for customers before they leave to pick-up their order. 
+
+6. Payment: Payment will be made when picking up the order. We accept all major credit cards, EBT cards and cash.
+
+7. Responsive Design: The app is optimized and available for use on both desktop comuters and mobile devices, ensuring a smooth experience no matter how customer's access it.
 
 # Technical Specifications
 
 1. Additional libraries: 
-react-icons/fa, axios.
+React-Icons/fa, Axios, React Prop-Tyes, React-Router-Dom
 
 2. API Axios Integration:
 Making HTTP requests to fetch data from external sources or connect to backend services.
@@ -30,4 +34,4 @@ https://trello.com/b/oNgVz9Iw/one-stop-sandwich-shop
 https://docs.google.com/document/d/1BWVeN2NQgmZXSSXNLYUABPF2Y9myx0oL7KJpKP8rKoI/edit?usp=sharing
 
 6. Netlify:
-https://deploy-preview-13--aesthetic-cassata-262bb4.netlify.app/
+https://aesthetic-cassata-262bb4.netlify.app/

@@ -1,50 +1,59 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
 
-const API = axios.create({
-  baseURL: "https://api.edamam.com",
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+const API_URL = 'https://edamam-food-and-grocery-database.p.rapidapi.com/api/food-database/v2/parser';
+
+const API_KEY = '1bf230826dmsh4f445e35b8cd314p13aae8jsn67230786dbbf';
+
+const options = {
+  method: 'GET',
+  url: API_URL,
+  params: {
+    'nutrition-type': 'cooking',
+    'category[0]': 'generic-foods',
+    'health[0]': 'alcohol-free',
+  },
   headers: {
-    "Content-Type": "application/json",
-    "X-Application-ID": "164f191f",
-    "X-API-Key": "7c746e2e8dc7000541345dd32c7a8b13"
-  }
-});
+    'X-RapidAPI-Key': API_KEY,
+    'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com',
+  },
+};
 
-function Calories() {
-  const [data, setData] = useState([]);
+function FoodData() {
+  const [randomItem, setRandomItem] = useState(null);
 
   useEffect(() => {
-    const endpoint = "/api/nutrition-data";
-    const foodItem = "bread";
-    const params = {
-      params: {
-        app_id: "164f191f",
-        app_key: "7c746e2e8dc7000541345dd32c7a8b13",
-        ingr: foodItem
-      }
-    };
 
-    API.get(endpoint, params)
+    axios
+      .request(options)
       .then((response) => {
-        const responseData = response.data.items || [];
-
-        setData(responseData);
+        const apiData = response.data;
+        if (apiData.hints && apiData.hints.length > 0) {
+          const randomIndex = Math.floor(Math.random() * apiData.hints.length);
+          const randomHint = apiData.hints[randomIndex];
+          setRandomItem(randomHint.food);
+        }
       })
       .catch((error) => {
-        console.error("Error fetching data:", error);
+        console.error(error);
+
       });
   }, []);
 
   return (
     <div>
-      <h1>API Data</h1>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-      </ul>
+      <h1>Calories information</h1>
+      {randomItem ? (
+        <div>
+          <strong>Name:</strong> {randomItem.label} <br />
+          <strong>Calories:</strong> {randomItem.nutrients.ENERC_KCAL || 'N/A'} kcal <br />
+        </div>
+      ) : (
+        <p>No data available</p>
+      )}
     </div>
   );
 }
 
-export default Calories;
+export default FoodData;
