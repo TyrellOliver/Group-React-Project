@@ -20,17 +20,31 @@
   height: auto;
 }
 
+.lower-menu-container-h2 {
+  font: rgb(4, 4, 199);
+}
+
+.category-name {
+  color: rgb(4, 4, 132);
+}
+
+#byo-button {
+  color: rgb(4, 4, 132);
+  font-weight: bold;
+}
+
 .lower-menu-container {
   display: flex;
   grid-gap: 20px;
   border: 1px solid black;
-  width: 75%;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   margin: 5px;
 }
 
 .chips-div {
+  font: rgb(4, 4, 199);
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -40,9 +54,6 @@
 #chips {
   width: 100%;
   height: auto;
-}
-
-.chips-container {
 }
 
 .beverages-div {
@@ -63,9 +74,9 @@
 
 .css-button-gradient--5 {
   min-width: 130px;
-  height: 40px;
+  height: 30px;
   color: #fff;
-  padding: 5px 10px;
+  padding: 0px 10px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;

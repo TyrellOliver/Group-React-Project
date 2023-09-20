@@ -26,7 +26,7 @@ const potatoChips = [
   },
   {
     id: "pc-06",
-    name: "Bag of MIss Vickie's Smokehouse BBQ Chips",
+    name: "MIss Vickie's Smokehouse BBQ Chips",
     price: 1.99
   }
 ];
