@@ -4,6 +4,9 @@ import BeverageItem from "./BeverageItem.jsx";
 import FoodData from "./APi.jsx";
 import Cart from "./Cart.jsx";
 
+import { Link } from "react-router-dom";
+
+
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
   const chipsBag = "/Potato-Chips-Menu.png";
@@ -29,15 +32,17 @@ function Menu() {
           <h1>Our Menu:</h1>
         </div>
         <h2 className="h2-button">
-          <a href="/byo-item" target="_blank">
+          <Link to="/byo-item">
             <button id="byo-button" type="submit" style={byoButtonStyles}>
               Build Your Own Sandwich
             </button>
+          </Link>
+
             <p>
               Create your own sandwich by building it from the bread up to the
               toppings and dressings!
             </p>
-          </a>
+
         </h2>
         <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
