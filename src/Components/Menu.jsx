@@ -3,7 +3,9 @@ import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
 import FoodData from "./APi.jsx";
 import Cart from "./Cart.jsx";
+
 import { Link } from "react-router-dom";
+
 
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
@@ -11,14 +13,15 @@ function Menu() {
 
   const sigSandwichStyles = {
     textDecoration: "underline",
-    marginLeft: "20px",
+    marginLeft: "20px"
   };
+  // <Cart />;
 
   const byoButtonStyles = {
     textDecoration: "underline",
     textAlign: "center",
     color: "#000080",
-    backgroundColor: "transparent",
+    backgroundColor: "transparent"
   };
   return (
     <>
@@ -34,6 +37,12 @@ function Menu() {
               Build Your Own Sandwich
             </button>
           </Link>
+
+            <p>
+              Create your own sandwich by building it from the bread up to the
+              toppings and dressings!
+            </p>
+
         </h2>
         <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
@@ -61,8 +70,11 @@ function Menu() {
             <BeverageItem />
           </div>
         </div>
+        <Cart />
       </div>
       <FoodData />
+      <br />
+      <br />
     </>
   );
 }

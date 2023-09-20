@@ -1,0 +1,8 @@
+.menucart {
+  border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  border: 7px solid #000000;
+  background-color: azure;
+  width: 500px;
+}
