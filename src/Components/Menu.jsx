@@ -1,9 +1,9 @@
 import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
-import FoodData from './APi.jsx'
+import FoodData from "./APi.jsx";
 import Cart from "./Cart.jsx";
-
+import { Link } from "react-router-dom";
 
 function Menu() {
   const drinksImage = "/beverage-bottles.png";
@@ -22,21 +22,18 @@ function Menu() {
   };
   return (
     <>
-
-
       <div className="menu-container">
-
         <br />
         <div id="menu-title">
           <br />
           <h1>Our Menu:</h1>
         </div>
         <h2 className="h2-button">
-          <a href="/byo-item" target="_blank">
+          <Link to="/byo-item">
             <button id="byo-button" type="submit" style={byoButtonStyles}>
               Build Your Own Sandwich
             </button>
-          </a>
+          </Link>
         </h2>
         <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
@@ -49,7 +46,7 @@ function Menu() {
         <div className="lower-menu-container">
           <div className="chips-div">
             <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
-            <h2 style={{textDecoration: "underline"}}>Chips</h2>
+            <h2 style={{ textDecoration: "underline" }}>Chips</h2>
             <ChipsItem />
           </div>
           <br />
@@ -60,7 +57,7 @@ function Menu() {
               alt="bottled-beverages"
               height={138}
             />
-            <h2 style={{textDecoration: "underline"}}>Beverages</h2>
+            <h2 style={{ textDecoration: "underline" }}>Beverages</h2>
             <BeverageItem />
           </div>
         </div>
