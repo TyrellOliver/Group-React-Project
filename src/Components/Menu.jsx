@@ -53,7 +53,12 @@ function Menu() {
         <div className="lower-menu-container">
           <div className="chips-div">
             <img id="chips" src={chipsBag} alt="potato-chips" height={138} />
-            <h2 style={{ textDecoration: "underline" }}>Chips</h2>
+            <h2
+              className="category-name"
+              style={{ textDecoration: "underline" }}
+            >
+              Chips
+            </h2>
             <ChipsItem />
           </div>
           <br />
@@ -64,7 +69,12 @@ function Menu() {
               alt="bottled-beverages"
               height={138}
             />
-            <h2 style={{ textDecoration: "underline" }}>Beverages</h2>
+            <h2
+              className="category-name"
+              style={{ textDecoration: "underline" }}
+            >
+              Beverages
+            </h2>
             <BeverageItem />
           </div>
         </div>

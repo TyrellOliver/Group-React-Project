@@ -1,6 +1,6 @@
 import "..//Styles/home.css";
+import { Link } from "react-router-dom";
 // import Calories from "./API.jsx";
-
 
 const Home = () => {
   const logo = "/sandwich-shop.png";
@@ -24,14 +24,13 @@ const Home = () => {
           <h2>Operation of Hours:</h2>
           <h3>9:00 am until 4:00 pm - 7 days a week!</h3>
           <br />
-          <a href="/menu">
+          <Link to="/menu">
             <button id="menu" type="submit" name="myButton">
               Menu: Order Online
             </button>
-            <br />
-            <br />
-          </a>
-          {/* <Calories /> */}
+          </Link>
+          <br />
+          <br />
         </div>
       </div>
     </>
