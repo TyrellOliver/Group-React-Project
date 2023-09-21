@@ -10,10 +10,22 @@ const Home = () => {
         <div className="upper-container">
           <h1>One-Stop Sandwich Shop</h1>
         </div>
-        <img id="logo" src={logo} alt="store logo" height={250} />
+        <img id="logo" src={logo} alt="store logo" height={400} />
         <br />
         <br />
         <div className="lower-container">
+          <Link to="/menu">
+            <button
+              className="menu-button"
+              id="menu-button"
+              type="submit"
+              name="myButton"
+            >
+              Menu: Order Online
+            </button>
+          </Link>
+          <br />
+          <br />
           <h2>Address:</h2>
           <h3>647 4th Ave, </h3>
           <h3>Brooklyn, NY 11232</h3>
@@ -24,11 +36,7 @@ const Home = () => {
           <h2>Operation of Hours:</h2>
           <h3>9:00 am until 4:00 pm - 7 days a week!</h3>
           <br />
-          <Link to="/menu">
-            <button id="menu" type="submit" name="myButton">
-              Menu: Order Online
-            </button>
-          </Link>
+
           <br />
           <br />
         </div>

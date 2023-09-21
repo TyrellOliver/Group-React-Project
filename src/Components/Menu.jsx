@@ -2,8 +2,7 @@ import SigSandwichItem from "./SigSandwichItem.jsx";
 import ChipsItem from "./ChipsItem.jsx";
 import BeverageItem from "./BeverageItem.jsx";
 import FoodData from "./APi.jsx";
-import Cart from "./Cart.jsx";
-
+import "../Styles/Menu.css";
 import { Link } from "react-router-dom";
 
 function Menu() {
@@ -25,15 +24,13 @@ function Menu() {
   return (
     <>
       <div className="menu-container">
-        <br />
         <div id="menu-title">
-          <br />
           <h1>Our Menu:</h1>
         </div>
         <h2 className="h2-button">
           <Link to="/byo-item">
             <button id="byo-button" type="submit" style={byoButtonStyles}>
-              Build Your Own Sandwich
+              <h3>Build Your Own Sandwich</h3>
             </button>
           </Link>
 
@@ -44,10 +41,9 @@ function Menu() {
         </h2>
         <br />
         <h2 style={sigSandwichStyles}>Signature Sandwiches</h2>
-        <SigSandwichItem />
-        <br />
-        <br />
-        <br />
+        <div>
+          <SigSandwichItem />
+        </div>
         <br />
         <br />
         <div className="lower-menu-container">
@@ -59,6 +55,7 @@ function Menu() {
             >
               Chips
             </h2>
+            <br />
             <ChipsItem />
           </div>
           <br />
@@ -75,10 +72,10 @@ function Menu() {
             >
               Beverages
             </h2>
+            <br />
             <BeverageItem />
           </div>
         </div>
-        <Cart />
       </div>
       <FoodData />
       <br />

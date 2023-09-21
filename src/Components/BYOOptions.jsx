@@ -11,7 +11,7 @@ export default function BYOOptions() {
           return (
             <div className="options-container" key={id}>
               <h4>
-                {/* <inut value={name} type="checkbox" /> */}
+                <input type="checkbox" value="false" name={name} id={id} />
                 {name} <span> ${price}</span>
               </h4>
             </div>
@@ -25,6 +25,7 @@ export default function BYOOptions() {
             return (
               <div className="options-container" key={id}>
                 <h4>
+                  <input type="checkbox" value="false" name={name} id={id} />
                   {name} <span> ${price}</span>
                 </h4>
               </div>
@@ -38,6 +39,7 @@ export default function BYOOptions() {
               return (
                 <div className="options-container" key={id}>
                   <h4>
+                    <input type="checkbox" value="false" name={name} id={id} />
                     {name} <span> ${price}</span>
                   </h4>
                 </div>
@@ -51,6 +53,12 @@ export default function BYOOptions() {
                 return (
                   <div className="options-container" key={id}>
                     <h4>
+                      <input
+                        type="checkbox"
+                        value="false"
+                        name={name}
+                        id={id}
+                      />
                       {name} <span> ${price}</span>
                     </h4>
                   </div>
@@ -64,6 +72,12 @@ export default function BYOOptions() {
                   return (
                     <div className="options-container" key={id}>
                       <h4>
+                        <input
+                          type="checkbox"
+                          value="false"
+                          name={name}
+                          id={id}
+                        />
                         {name} <span> ${price}</span>
                       </h4>
                     </div>
