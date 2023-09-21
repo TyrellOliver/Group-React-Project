@@ -55,6 +55,7 @@ function Menu() {
             >
               Chips
             </h2>
+            <br />
             <ChipsItem />
           </div>
           <br />
@@ -71,6 +72,7 @@ function Menu() {
             >
               Beverages
             </h2>
+            <br />
             <BeverageItem />
           </div>
         </div>

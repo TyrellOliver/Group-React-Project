@@ -14,16 +14,6 @@ const Home = () => {
         <br />
         <br />
         <div className="lower-container">
-          <h2>Address:</h2>
-          <h3>647 4th Ave, </h3>
-          <h3>Brooklyn, NY 11232</h3>
-          <br />
-          <h2>Phone:</h2>
-          <h3>212-555-5555</h3>
-          <br />
-          <h2>Operation of Hours:</h2>
-          <h3>9:00 am until 4:00 pm - 7 days a week!</h3>
-          <br />
           <Link to="/menu">
             <button
               className="menu-button"
@@ -34,6 +24,19 @@ const Home = () => {
               Menu: Order Online
             </button>
           </Link>
+          <br />
+          <br />
+          <h2>Address:</h2>
+          <h3>647 4th Ave, </h3>
+          <h3>Brooklyn, NY 11232</h3>
+          <br />
+          <h2>Phone:</h2>
+          <h3>212-555-5555</h3>
+          <br />
+          <h2>Operation of Hours:</h2>
+          <h3>9:00 am until 4:00 pm - 7 days a week!</h3>
+          <br />
+
           <br />
           <br />
         </div>

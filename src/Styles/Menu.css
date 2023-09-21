@@ -11,7 +11,7 @@
 
 .sandwiches-cart {
   display: grid;
-  grid-template-columns: 66fr 33fr;
+  grid-template-columns: 60fr 39fr;
   grid-gap: 20px;
   width: 100%;
   border-radius: 10px;
@@ -47,9 +47,9 @@
 
 .lower-menu-container {
   display: flex;
-  grid-gap: 20px;
+  grid-gap: 10px;
   border: 1px solid black;
-  width: 66%;
+  width: 60%;
   padding: 20px;
   border-radius: 10px;
   margin: 5px;
@@ -114,34 +114,21 @@
   margin-bottom: 35x;
 }
 
-#menu-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.css-button-gradient--4 {
+  min-width: 100px;
+  height: 30px;
+  color: #fff;
+  padding: 0px 10px;
+  font-weight: bold;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-#menu-button:hover {
-  border-color: #646cff;
-}
-#menu-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);
+  left: 50%;
+  transform: translate(-50%);
 }

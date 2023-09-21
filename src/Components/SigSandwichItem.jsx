@@ -16,10 +16,12 @@ export default function SigSandwichItem() {
           return (
             <div className="sandwich-container" key={id}>
               <img src={image} id="food-image" alt={name} />
-              <h3>
-                {name} <span> - ${price}</span> <br />
-                <button className="css-button-gradient--5">Add to Cart</button>
-              </h3>
+              <h4>
+                <p>
+                  {name} <span> - ${price}</span> <br />
+                </p>
+              </h4>
+              <button className="css-button-gradient--4">Add to Cart</button>
               <p>{description}</p>
               <br />
             </div>
