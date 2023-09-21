@@ -1,4 +1,4 @@
-# Your One Stop Sandiwch Shop
+# Your One-Stop Sandwich Shop
 
 One-Stop Sandiwch Shop is a user-friendly React-based web application that provides an online ordering experience for their users to create their own sandwich by building it from the bottom to the top. We offer a comprehensive selection of sandwich ingredients and give the customer full control to have it their way. We also offer a selection of signature sandwiches which have been hand-selected by each of our chefs for those who want to try something different or those who can't make a decision. 
 
