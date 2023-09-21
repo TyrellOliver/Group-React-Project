@@ -10,7 +10,7 @@ const Home = () => {
         <div className="upper-container">
           <h1>One-Stop Sandwich Shop</h1>
         </div>
-        <img id="logo" src={logo} alt="store logo" height={250} />
+        <img id="logo" src={logo} alt="store logo" height={400} />
         <br />
         <br />
         <div className="lower-container">
@@ -25,7 +25,12 @@ const Home = () => {
           <h3>9:00 am until 4:00 pm - 7 days a week!</h3>
           <br />
           <Link to="/menu">
-            <button id="menu" type="submit" name="myButton">
+            <button
+              className="menu-button"
+              id="menu-button"
+              type="submit"
+              name="myButton"
+            >
               Menu: Order Online
             </button>
           </Link>
